@@ -4,6 +4,7 @@
   "description": "Eloquent Javascript Chapter 21 Project Exercises",
   "main": "main.js",
   "scripts": {
+    "start": "node main.js"
   },
   "repository": {
     "type": "git",
@@ -14,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/Kozhemyak/Eloquent-Javascript-Sandbox/issues"
   },
-  "homepage": "https://github.com/Kozhemyak/Eloquent-Javascript-Sandbox#readme"
+  "homepage": "https://github.com/Kozhemyak/Eloquent-Javascript-Sandbox#readme",
+  "dependencies": {
+    "ecstatic": "^2.1.0"
+  }
 }
