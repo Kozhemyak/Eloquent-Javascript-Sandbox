@@ -23,12 +23,10 @@ class Router {
       var match = route.url.exec(path);
 
       if (!match || route.method != request.method) {
-        console.info('-resolve route was failed : [' + request.url + ']');
         return false;
       }
       var urlParts = match.slice(1).map(decodeURIComponent);
       route.handler.apply(null, [request, response].concat(urlParts));
-      console.info('-resolve route was ok : [' + request.url + ']');
       return true;
     });
   }
